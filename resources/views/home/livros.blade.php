@@ -8,8 +8,9 @@
         <div class="bom-dia">
             <img src="{{ url('assets/img/bom-dia.png') }}" alt="">
         </div>
-        <div class="hora-da-papa">
+        <div class="hora-da-papa mt-3">
             <img src="{{ url('assets/img/hora-papa.png') }}" alt="">
         </div>
+
     </div>
 @endsection

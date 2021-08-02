@@ -15,7 +15,9 @@
                 <input id="name_1" class="input" type="password" pattern=".+" required />
                 <label class="label" for="name_1">SENHA</label>
             </div>
-
+            <div class="mt-3">
+                <button class="btn btn-login">LOGIN</button>
+            </div>
             <div class="mt-3 first-acess">
                 <a href="#">PRIMEIRO ACESSO?</a>
             </div>
