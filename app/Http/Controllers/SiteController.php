@@ -53,4 +53,8 @@ class SiteController extends Controller
     {
         return view('home.sobre');
     }
+    public function insMusica()
+    {
+        return view('home.inscricao-musica');
+    }
 }

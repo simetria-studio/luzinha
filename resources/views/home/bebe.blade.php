@@ -20,7 +20,7 @@
                     </a>
                 </div>
                 <div class="col-6 mt-5 aulas3 text-center">
-                    <a href="">
+                    <a href="{{ url('incricao-musica') }}">
                         <img src="{{ url('assets/img/musica.png') }}" alt="">
                         <p>AULAS DE MUSICA</p>
                     </a>

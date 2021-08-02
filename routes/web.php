@@ -26,13 +26,8 @@ Route::get('/livros', [SiteController::class, 'livros']);
 Route::get('/contatos', [SiteController::class, 'contatos']);
 Route::get('contato', [SiteController::class, 'contato']);
 Route::get('/sobre', [SiteController::class, 'sobre']);
+Route::get('/incricao-musica', [SiteController::class, 'insMusica']);
 
-
-
-Route::get('/inscricao-musica', function () {
-
-    return view('home.inscricao-musica');
-});
 Route::get('/inscricao-ballet', function () {
 
     return view('home.inscricao-ballet');
