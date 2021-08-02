@@ -34,21 +34,22 @@
                         <div class="">
                             <label class="menu-toggle"><img src="{{ url('assets/img/menu.svg') }}" alt=""></label>
                             <nav>
+                                <a class="nav-item" href="{{ url('/') }}">Home</a>
                                 <a class="nav-item" href="#home">Loja Online</a>
                                 <a class="nav-item" href="#about">Livros</a>
                                 <a class="nav-item" href="#work">Bebé</a>
-                                <a class="nav-item" href="#contact">Música</a>
+                                <a class="nav-item" href="{{ url('musicas') }}">Música</a>
                                 <a class="nav-item" href="#contact">Jogos</a>
                                 <a class="nav-item" href="#contact">Pais</a>
-                                <a class="nav-item" href="#contact">Sobre autora</a>
-                                <a class="nav-item" href="#contact">Contactos</a>
+                                <a class="nav-item" href="{{ url('sobre') }}">Sobre autora</a>
+                                <a class="nav-item" href="{{ url('contatos') }}">Contactos</a>
                             </nav>
                         </div>
 
                     </div>
                     <div class="col-8">
-                        <div class="logo">
-                            <img src="{{ url('assets/img/logo.svg') }}" alt="">
+                       <div class="logo">
+                           <a href="{{ url('/') }}"><img src="{{ url('assets/img/logo.svg') }}" alt=""></a>
                         </div>
                     </div>
                     <div class="col-2 user">

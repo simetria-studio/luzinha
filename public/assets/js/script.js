@@ -11,9 +11,11 @@ $( document ).ready(function() {
 
     //Waypoints
     var itemIndex;
-    $('.nav-item').on('click', function (event) {
-      event.preventDefault();
-      itemIndex = $(this).attr('href');
-      $('body, html').animate({scrollTop: $(itemIndex).offset().top - 0}, 1000)
-    });
+
   });
+  new GreenAudioPlayer('.gap-example');
+  new GreenAudioPlayer('.gap1-example');
+  new GreenAudioPlayer('.gap2-example');
+  new GreenAudioPlayer('.gap3-example');
+  new GreenAudioPlayer('.gap4-example');
+

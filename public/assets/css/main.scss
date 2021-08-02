@@ -2,8 +2,7 @@ body{
     background: #FDE3A2;
 }
 
-* {
-    box-sizing: border-box; }
+
 
 
   a {
@@ -60,12 +59,13 @@ body{
     align-content: center;
     background-color:
     #FED775;
+    z-index: 10;
 
 color: #D31F36;
 
     transition: all .3s ease-out .2s; }
     nav.open {
-      top: 5%;
+      top: 0;
       transition: all .3s ease-in 0s;
         a{
 
@@ -148,4 +148,17 @@ color: #D31F36;
     height: 100%;
     padding: 44px 15px 0 15px;
     border-radius: 50%;
+}
+.musicas{
+    margin-bottom: 180px;
+}
+.player{
+    padding: 0 5px;
+    margin: 25px 0;
+    color: #A42B31;
+
+}
+.green-audio-player .slider .gap-progress .pin
+{
+    background-color: #dc3545 !important;
 }

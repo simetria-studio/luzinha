@@ -17,6 +17,7 @@ use App\Http\Controllers\SiteController;
 Route::get('layout', [SiteController::class, 'layout']);
 
 Route::get('/', [SiteController::class, 'index']);
+Route::get('/musicas', [SiteController::class, 'musicas']);
 
 
 Route::get('/sobre', function () {
