@@ -75,7 +75,7 @@
                     </div>
                     <div class="col-4">
                         <span class="bolinha">
-                            <img src="{{ url('assets/img/centro.svg') }}" alt="">
+                           <a href="{{ url('/') }}"><img src="{{ url('assets/img/centro.svg') }}" alt=""></a>
                         </span>
                     </div>
                     <div class="col-4">
