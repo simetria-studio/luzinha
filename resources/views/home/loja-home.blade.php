@@ -9,7 +9,7 @@
                     <img src="{{ url('assets/img/bom-dia.png') }}" alt="">
                 </div>
                 <div>
-                    <button class="btn btn-comprar">COMPRAR</button>
+                 <a href="{{ url('produto-1') }}">  <button class="btn btn-comprar">COMPRAR</button></a>
                 </div>
             </div>
 
@@ -18,7 +18,7 @@
                     <img src="{{ url('assets/img/hora-papa.png') }}" alt="">
                 </div>
                 <div class="mb-5">
-                    <button class="btn btn-comprar">COMPRAR</button>
+                   <a href="{{ url('produto-2') }}"> <button class="btn btn-comprar">COMPRAR</button></a>
                 </div>
             </div>
         </div>
