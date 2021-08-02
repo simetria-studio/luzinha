@@ -168,6 +168,10 @@ color: #D31F36;
 
 .livro{
     margin-top: 180px;
+    img{
+        object-fit: cover;
+        width: 100%;
+    }
 }
 
 .flipbook{
