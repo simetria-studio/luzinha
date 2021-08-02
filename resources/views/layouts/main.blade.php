@@ -20,17 +20,23 @@
         <div class="barra"></div>
         <div class="menu">
             <div class="container">
-                <div class="row">
-                    <div class="col-4">
+                <div class="row  mx-auto">
+                    <div class="col-2">
+                        <label class="menu-toggle"><img src="{{ url('assets/img/menu.svg') }}" alt=""></label>
+                        <nav><a class="nav-item" href="#home">Home</a><a class="nav-item" href="#about">About</a><a
+                                class="nav-item" href="#work">Work</a><a class="nav-item" href="#contact">Contact</a>
+                        </nav>
 
                     </div>
-                    <div class="col-4">
-                        <div>
+                    <div class="col-8">
+                        <div class="logo">
                             <img src="{{ url('assets/img/logo.svg') }}" alt="">
                         </div>
                     </div>
-                    <div class="col-4">
-
+                    <div class="col-2">
+                        <div class="user">
+                            <img src="{{ url('assets/img/user.svg') }}" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -46,7 +52,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
     </script>
-
+    <script src="{{ url('/assets/js/script.js') }}"></script>
 
 </body>
 
