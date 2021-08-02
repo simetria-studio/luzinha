@@ -15,4 +15,9 @@ class SiteController extends Controller
     {
         return view('layouts.main');
     }
+
+    public function musicas()
+    {
+        return view('home.musicas');
+    }
 }
