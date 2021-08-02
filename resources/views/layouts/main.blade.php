@@ -97,8 +97,8 @@
     <script src="{{ url('/assets/js/script.js') }}"></script>
     <script type="text/javascript">
         $(".flipbook").turn({
-            width: 400,
-            height: 300,
+            width: 600,
+            height: 400,
             autoCenter: true
         });
     </script>
