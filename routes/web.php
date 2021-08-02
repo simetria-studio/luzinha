@@ -28,3 +28,11 @@ Route::get('/contatos', function () {
 
     return view('home.contatos');
 });
+Route::get('/livros', function () {
+
+    return view('home.livros');
+});
+Route::get('/bebe', function () {
+
+    return view('home.bebe');
+});
