@@ -20,4 +20,9 @@ class SiteController extends Controller
     {
         return view('home.musicas');
     }
+
+    public function pais()
+    {
+        return view('home.pais');
+    }
 }

@@ -40,7 +40,7 @@
                                 <a class="nav-item" href="#work">Bebé</a>
                                 <a class="nav-item" href="{{ url('musicas') }}">Música</a>
                                 <a class="nav-item" href="#contact">Jogos</a>
-                                <a class="nav-item" href="#contact">Pais</a>
+                                <a class="nav-item" href="{{ url('pais') }}">Pais</a>
                                 <a class="nav-item" href="{{ url('sobre') }}">Sobre autora</a>
                                 <a class="nav-item" href="{{ url('contatos') }}">Contactos</a>
                             </nav>
