@@ -25,7 +25,7 @@ Route::get('/educar', [SiteController::class, 'educar']);
 Route::get('/livros', [SiteController::class, 'livros']);
 Route::get('/contatos', [SiteController::class, 'contatos']);
 Route::get('contato', [SiteController::class, 'contato']);
-
+Route::get('/sobre', [SiteController::class, 'sobre']);
 
 
 
