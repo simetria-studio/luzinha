@@ -37,7 +37,7 @@
                             <label class="menu-toggle"><img src="{{ url('assets/img/menu.svg') }}" alt=""></label>
                             <nav>
                                 <a class="nav-item" href="{{ url('/') }}">Home</a>
-                                <a class="nav-item" href="#home">Loja Online</a>
+                                <a class="nav-item" href="{{ url('loja-home') }}">Loja Online</a>
                                 <a class="nav-item" href="{{ url('livros') }}">Livros</a>
                                 <a class="nav-item" href="{{ url('bebes') }}">Bebé</a>
                                 <a class="nav-item" href="{{ url('musicas') }}">Música</a>

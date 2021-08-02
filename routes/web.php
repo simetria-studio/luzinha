@@ -30,21 +30,9 @@ Route::get('/incricao-musica', [SiteController::class, 'insMusica']);
 Route::get('/inscricao-ballet', [SiteController::class, 'insBallet']);
 Route::get('/livro-1', [SiteController::class, 'livro1']);
 Route::get('/livro-2', [SiteController::class, 'livro2']);
+Route::get('loja-home', [SiteController::class, 'loja']);
 
 
-
-Route::get('/inscricao-musica', function () {
-
-    return view('home.inscricao-musica');
-});
-Route::get('/inscricao-ballet', function () {
-
-    return view('home.inscricao-ballet');
-});
-Route::get('/loja-home', function () {
-
-    return view('home.loja-home');
-});
 Route::get('/loja-single', function () {
 
     return view('home.loja-single');
