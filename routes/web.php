@@ -18,3 +18,8 @@ Route::get('layout', [SiteController::class, 'layout']);
 
 Route::get('/', [SiteController::class, 'index']);
 
+
+Route::get('/sobre', function () {
+
+    return view('home.sobre');
+});
