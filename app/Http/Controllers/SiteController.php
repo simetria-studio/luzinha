@@ -57,4 +57,8 @@ class SiteController extends Controller
     {
         return view('home.inscricao-musica');
     }
+    public function insBallet()
+    {
+        return view('home.inscricao-ballet');
+    }
 }

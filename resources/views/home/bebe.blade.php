@@ -26,7 +26,7 @@
                     </a>
                 </div>
                 <div class="col-6 mt-5 aulas4 text-center">
-                    <a href="">
+                    <a href="{{ url('inscricao-ballet') }}">
                         <img src="{{ url('assets/img/ballet.png') }}" alt="">
                         <p>AULAS DE BALLET</p>
                     </a>

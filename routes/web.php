@@ -27,8 +27,6 @@ Route::get('/contatos', [SiteController::class, 'contatos']);
 Route::get('contato', [SiteController::class, 'contato']);
 Route::get('/sobre', [SiteController::class, 'sobre']);
 Route::get('/incricao-musica', [SiteController::class, 'insMusica']);
+Route::get('/inscricao-ballet', [SiteController::class, 'insBallet']);
 
-Route::get('/inscricao-ballet', function () {
 
-    return view('home.inscricao-ballet');
-});
