@@ -33,3 +33,7 @@ Route::get('/inscricao-musica', function () {
 
     return view('home.inscricao-musica');
 });
+Route::get('/inscricao-ballet', function () {
+
+    return view('home.inscricao-ballet');
+});
