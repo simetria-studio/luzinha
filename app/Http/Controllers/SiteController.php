@@ -65,4 +65,8 @@ class SiteController extends Controller
     {
         return view('home.livro-1');
     }
+    public function livro2()
+    {
+        return view('home.livro2');
+    }
 }

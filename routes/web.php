@@ -29,9 +29,7 @@ Route::get('/sobre', [SiteController::class, 'sobre']);
 Route::get('/incricao-musica', [SiteController::class, 'insMusica']);
 Route::get('/inscricao-ballet', [SiteController::class, 'insBallet']);
 Route::get('/livro-1', [SiteController::class, 'livro1']);
-
-<<<<<<< Updated upstream
-=======
+Route::get('/livro-2', [SiteController::class, 'livro2']);
 
 
 
@@ -63,4 +61,4 @@ Route::get('/register', function () {
 
     return view('login.register');
 });
->>>>>>> Stashed changes
+
