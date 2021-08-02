@@ -23,3 +23,7 @@ Route::get('/sobre', function () {
 
     return view('home.sobre');
 });
+Route::get('/contatos', function () {
+
+    return view('home.contatos');
+});
