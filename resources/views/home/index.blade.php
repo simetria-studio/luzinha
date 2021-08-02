@@ -2,8 +2,11 @@
 
 @section('content')
     <div class="container">
-        <div>
+        <div class="bom-dia">
             <img src="{{ url('assets/img/bom-dia.png') }}" alt="">
+        </div>
+        <div class="hora-da-papa">
+            <img src="{{ url('assets/img/hora-papa.png') }}" alt="">
         </div>
     </div>
 @endsection
