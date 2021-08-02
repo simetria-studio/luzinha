@@ -8,6 +8,11 @@ class SiteController extends Controller
 {
     public function index()
     {
-        return view('layouts.main')
+        return view('layouts.main');
+    }
+
+    public function layout()
+    {
+        return view('layouts.main');
     }
 }
