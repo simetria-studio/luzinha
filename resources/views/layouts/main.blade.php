@@ -37,7 +37,7 @@
                                 <a class="nav-item" href="{{ url('/') }}">Home</a>
                                 <a class="nav-item" href="#home">Loja Online</a>
                                 <a class="nav-item" href="#about">Livros</a>
-                                <a class="nav-item" href="#work">Bebé</a>
+                                <a class="nav-item" href="{{ url('bebes') }}">Bebé</a>
                                 <a class="nav-item" href="{{ url('musicas') }}">Música</a>
                                 <a class="nav-item" href="#contact">Jogos</a>
                                 <a class="nav-item" href="{{ url('pais') }}">Pais</a>

@@ -29,4 +29,8 @@ class SiteController extends Controller
     {
         return view('home.alimentacao');
     }
+    public function bebes()
+    {
+        return view('home.bebe');
+    }
 }
