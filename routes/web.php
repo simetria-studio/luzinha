@@ -22,7 +22,7 @@ Route::get('/pais', [SiteController::class, 'pais']);
 Route::get('/alimentacao', [SiteController::class, 'alimentacao']);
 Route::get('/bebes', [SiteController::class, 'bebes']);
 Route::get('/educar', [SiteController::class, 'educar']);
-
+Route::get('livros', [SiteController::class, 'livros']);
 
 Route::get('/sobre', function () {
 
@@ -32,10 +32,7 @@ Route::get('/contatos', function () {
 
     return view('home.contatos');
 });
-Route::get('/livros', function () {
 
-    return view('home.livros');
-});
 
 
 Route::get('/inscricao-musica', function () {
