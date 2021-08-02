@@ -35,12 +35,13 @@ Route::get('produto-1', [SiteController::class, 'produtoOne']);
 Route::get('produto-2', [SiteController::class, 'produtoTwo']);
 
 
-Route::get('/login', function () {
 
-    return view('login.login');
-});
 Route::get('/register', function () {
 
     return view('login.register');
 });
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

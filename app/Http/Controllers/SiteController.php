@@ -81,4 +81,9 @@ class SiteController extends Controller
     {
         return view('home.loja-single-2');
     }
+
+    public function login()
+    {
+        return view('login.login');
+    }
 }
