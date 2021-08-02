@@ -40,8 +40,14 @@ Route::get('/register', function () {
 
     return view('login.register');
 });
+<<<<<<< HEAD
+=======
 
+<<<<<<< HEAD
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+=======
+>>>>>>> main
+>>>>>>> main

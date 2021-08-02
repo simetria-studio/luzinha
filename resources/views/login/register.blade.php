@@ -27,8 +27,10 @@
                 <input id="senha2" class="input" type="password" pattern=".+" required />
                 <label class="label" for="senha2">REPETIR SENHA</label>
             </div>
-
-            <div class="mt-3 first-acess">
+            <div class="mt-3">
+                <button class="btn btn-login">REGISTO</button>
+            </div>
+            <div class="mt-2 first-acess">
                 <a href="#">JA TEM LOGIN?</a>
             </div>
         </form>
