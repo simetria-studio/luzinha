@@ -62,7 +62,21 @@
         @yield('content')
     </main>
     <footer>
-
+        <div class="footer">
+            <div class="container">
+                <div class="row justify-content-lg-around">
+                    <div class="col-4">
+                        <img src="{{ url('assets/img/camera.svg') }}" alt="">
+                    </div>
+                    <div class="col-4 ">
+                        <img src="{{ url('assets/img/centro.svg') }}" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img src="{{ url('assets/img/jogo.svg') }}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"

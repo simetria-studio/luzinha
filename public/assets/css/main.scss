@@ -60,11 +60,19 @@ body{
     align-content: center;
     background-color:
     #FED775;
-    color: black;
+
+color: #D31F36;
+
     transition: all .3s ease-out .2s; }
     nav.open {
       top: 5%;
-      transition: all .3s ease-in 0s; }
+      transition: all .3s ease-in 0s;
+        a{
+
+color: #D31F36;
+
+        }
+    }
       nav.open .nav-item {
         padding: 20px;
         letter-spacing: .2em;
@@ -125,4 +133,12 @@ body{
     }
 
 
+}
+.footer{
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    background: white;
+    border-radius: 35px 35px 0px 0px;
 }
