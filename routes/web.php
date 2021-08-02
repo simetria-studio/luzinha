@@ -20,28 +20,15 @@ Route::get('/', [SiteController::class, 'index']);
 Route::get('/musicas', [SiteController::class, 'musicas']);
 Route::get('/pais', [SiteController::class, 'pais']);
 Route::get('/alimentacao', [SiteController::class, 'alimentacao']);
+Route::get('/bebes', [SiteController::class, 'bebes']);
+Route::get('/educar', [SiteController::class, 'educar']);
+Route::get('/livros', [SiteController::class, 'livros']);
+Route::get('/contatos', [SiteController::class, 'contatos']);
+Route::get('contato', [SiteController::class, 'contato']);
 
 
-Route::get('/sobre', function () {
 
-    return view('home.sobre');
-});
-Route::get('/contatos', function () {
 
-    return view('home.contatos');
-});
-Route::get('/livros', function () {
-
-    return view('home.livros');
-});
-Route::get('/bebe', function () {
-
-    return view('home.bebe');
-});
-Route::get('/educar', function () {
-
-    return view('home.educar');
-});
 Route::get('/inscricao-musica', function () {
 
     return view('home.inscricao-musica');

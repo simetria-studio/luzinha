@@ -29,4 +29,28 @@ class SiteController extends Controller
     {
         return view('home.alimentacao');
     }
+    public function bebes()
+    {
+        return view('home.bebe');
+    }
+
+    public function educar()
+    {
+        return view('home.educar');
+    }
+
+    public function livros()
+    {
+        return view('home.livros');
+    }
+
+    public function contatos()
+    {
+        return view('home.contatos');
+    }
+
+    public function sobre()
+    {
+        return view('home.sobre');
+    }
 }
