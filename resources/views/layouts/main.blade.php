@@ -68,8 +68,10 @@
                     <div class="col-4">
                         <img src="{{ url('assets/img/camera.svg') }}" alt="">
                     </div>
-                    <div class="col-4 ">
-                        <img src="{{ url('assets/img/centro.svg') }}" alt="">
+                    <div class="col-4">
+                        <span class="bolinha">
+                            <img src="{{ url('assets/img/centro.svg') }}" alt="">
+                        </span>
                     </div>
                     <div class="col-4">
                         <img src="{{ url('assets/img/jogo.svg') }}" alt="">
