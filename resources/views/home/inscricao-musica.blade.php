@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="voltar">
-        <button class="btn btn-voltar">VOLTAR</button>
+      <a href="{{ url('bebes') }}"> <button class="btn btn-voltar">VOLTAR</button></a>
     </div>
     <div class="titulo">
         <P>AULAS DE MÚSICA</P>
