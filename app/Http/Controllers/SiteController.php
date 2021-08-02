@@ -61,4 +61,8 @@ class SiteController extends Controller
     {
         return view('home.inscricao-ballet');
     }
+    public function livro1()
+    {
+        return view('home.livro-1');
+    }
 }

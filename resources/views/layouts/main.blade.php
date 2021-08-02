@@ -17,6 +17,8 @@
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/css/green-audio-player.min.css">
+
+        <link rel="stylesheet" href="{{ url('assets/css/basic.css') }}">
     <link rel="stylesheet" href="{{ url('assets/css/main.min.css') }}">
     <link rel="stylesheet" href="{{ url('assets/css/home.min.css') }}">
 
@@ -84,12 +86,22 @@
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script type="text/javascript" src="{{ url('assets/extras/modernizr.2.5.3.min.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/js/green-audio-player.min.js"></script>
+    <script src="{{ url('/assets/lib/turn.js') }}"></script>
+    <script src="{{ url('/assets/js/basic.js') }}"></script>
     <script src="{{ url('/assets/js/script.js') }}"></script>
-
+    <script type="text/javascript">
+        $(".flipbook").turn({
+            width: 400,
+            height: 300,
+            autoCenter: true
+        });
+    </script>
 </body>
 
 </html>
