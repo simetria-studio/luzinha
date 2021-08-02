@@ -43,4 +43,9 @@ class SiteController extends Controller
     {
         return view('home.livros');
     }
+
+    public function contatos()
+    {
+        return view('home.contatos');
+    }
 }
