@@ -48,4 +48,9 @@ class SiteController extends Controller
     {
         return view('home.contatos');
     }
+
+    public function sobre()
+    {
+        return view('home.sobre');
+    }
 }
