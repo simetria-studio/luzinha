@@ -30,3 +30,37 @@ Route::get('/incricao-musica', [SiteController::class, 'insMusica']);
 Route::get('/inscricao-ballet', [SiteController::class, 'insBallet']);
 Route::get('/livro-1', [SiteController::class, 'livro1']);
 
+<<<<<<< Updated upstream
+=======
+
+
+
+Route::get('/inscricao-musica', function () {
+
+    return view('home.inscricao-musica');
+});
+Route::get('/inscricao-ballet', function () {
+
+    return view('home.inscricao-ballet');
+});
+Route::get('/loja-home', function () {
+
+    return view('home.loja-home');
+});
+Route::get('/loja-single', function () {
+
+    return view('home.loja-single');
+});
+Route::get('/loja-single-1', function () {
+
+    return view('home.loja-single-2');
+});
+Route::get('/login', function () {
+
+    return view('login.login');
+});
+Route::get('/register', function () {
+
+    return view('login.register');
+});
+>>>>>>> Stashed changes
