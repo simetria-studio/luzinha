@@ -37,13 +37,14 @@
         color: #fff;
     }
 }
-.btn-voltar{
+.btn-voltar {
     background-color: #010101;
     color: #fff;
     width: 100%;
     height: 65px;
+    font-family: 'Fredoka One';
 }
-.btn-voltar:hover{
+.btn-voltar:hover {
     color: #fff;
 }
 .foto-lia {
@@ -81,7 +82,7 @@
     }
 }
 .icones_1 {
-    margin-top:30px;
+    margin-top: 30px;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -94,8 +95,8 @@
 // pagina bebes
 
 .bebe {
-    p{
-        color: #A42B31;
+    p {
+        color: #a42b31;
         font-weight: 400;
         font-size: 23.4px;
         line-height: 28.32px;
@@ -128,16 +129,42 @@
 
 // PAGINA EDUCAR
 
-.educar-1{
+.educar-1 {
     width: 100%;
     height: 253px;
 
-    img{
+    img {
         width: 100%;
         height: 100%;
     }
 }
-.texto-1{
+.texto-1 {
     padding-top: 30px;
     margin-bottom: 150px;
+}
+
+// pagina de inscrião de musica
+
+.texto-2 {
+    padding-top: 23px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+}
+.formulario {
+    margin-top: 14px;
+
+    input {
+        height: 65px;
+    }
+    .enviar {
+        margin-bottom: 200px;
+
+        .btn-enviar {
+            width: 100%;
+            background-color: #06a429;
+            color: #fff;
+            height: 65px;
+        }
+    }
 }
