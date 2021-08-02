@@ -29,30 +29,12 @@ Route::get('/sobre', [SiteController::class, 'sobre']);
 Route::get('/incricao-musica', [SiteController::class, 'insMusica']);
 Route::get('/inscricao-ballet', [SiteController::class, 'insBallet']);
 Route::get('/livro-1', [SiteController::class, 'livro1']);
+Route::get('/livro-2', [SiteController::class, 'livro2']);
+Route::get('loja-home', [SiteController::class, 'loja']);
+Route::get('produto-1', [SiteController::class, 'produtoOne']);
+Route::get('produto-2', [SiteController::class, 'produtoTwo']);
 
 
-
-
-Route::get('/inscricao-musica', function () {
-
-    return view('home.inscricao-musica');
-});
-Route::get('/inscricao-ballet', function () {
-
-    return view('home.inscricao-ballet');
-});
-Route::get('/loja-home', function () {
-
-    return view('home.loja-home');
-});
-Route::get('/loja-single', function () {
-
-    return view('home.loja-single');
-});
-Route::get('/loja-single-1', function () {
-
-    return view('home.loja-single-2');
-});
 Route::get('/login', function () {
 
     return view('login.login');
@@ -61,3 +43,7 @@ Route::get('/register', function () {
 
     return view('login.register');
 });
+<<<<<<< HEAD
+=======
+
+>>>>>>> main

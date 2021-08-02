@@ -8,7 +8,7 @@
         <div class="bebe">
             <div class="row">
                 <div class="col-6 mt-5 aulas1 text-center">
-                    <a href="">
+                    <a href="{{ url('alimentacao') }}">
                         <img src="{{ url('assets/img/alimentacao.png') }}" alt="">
                         <p>ALIMENTAÇÃO</p>
                     </a>

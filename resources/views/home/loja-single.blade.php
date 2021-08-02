@@ -13,7 +13,7 @@
                 <span>VALOR 9,90</span>
             </div>
             <div class="mt-3">
-                <button class="btn btn-comprar">COMPRAR</button>
+               <a href="https://api.whatsapp.com/send?phone=55351910123364&text=Ol%C3%A1%2C%20gostaria%20de%20adquirir%20o%20livro.%20LIVRO%20BOM%20DIA"><button class="btn btn-comprar">COMPRAR</button></a> 
             </div>
         </div>
     </div>
