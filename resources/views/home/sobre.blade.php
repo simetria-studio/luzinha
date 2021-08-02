@@ -19,7 +19,8 @@
             <p> Mestre em Literatura Portuguesa pela Faculdade de Letras da
                 Universidade do Porto. Foi mãe há 2 anos de uma menina chamada Luz.
             </p>
-            <p>Esta nova fase inspirou-a para escrever uma
+            <p class="texto-final">
+                Esta nova fase inspirou-a para escrever uma
                 coleção de 6 livros infantis de carácter pedagógico chamada "O Mundo da Luzinha".
             </p>
         </div>
