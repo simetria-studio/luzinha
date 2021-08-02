@@ -33,4 +33,9 @@ class SiteController extends Controller
     {
         return view('home.bebe');
     }
+
+    public function educar()
+    {
+        return view('home.educar');
+    }
 }

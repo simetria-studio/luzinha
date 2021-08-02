@@ -14,7 +14,7 @@
                     </a>
                 </div>
                 <div class="col-6 mt-5 aulas2 text-center">
-                    <a href="">
+                    <a href="{{ url('educar') }}">
                         <img src="{{ url('assets/img/educar.png') }}" alt="">
                         <p>EDUCAR</p>
                     </a>

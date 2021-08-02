@@ -21,6 +21,8 @@ Route::get('/musicas', [SiteController::class, 'musicas']);
 Route::get('/pais', [SiteController::class, 'pais']);
 Route::get('/alimentacao', [SiteController::class, 'alimentacao']);
 Route::get('/bebes', [SiteController::class, 'bebes']);
+Route::get('/educar', [SiteController::class, 'educar']);
+
 
 Route::get('/sobre', function () {
 
@@ -35,10 +37,7 @@ Route::get('/livros', function () {
     return view('home.livros');
 });
 
-Route::get('/educar', function () {
 
-    return view('home.educar');
-});
 Route::get('/inscricao-musica', function () {
 
     return view('home.inscricao-musica');
