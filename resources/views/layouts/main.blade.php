@@ -16,16 +16,26 @@
 </head>
 
 <body>
+    <div class="barra"></div>
     <header>
-        <div class="barra"></div>
+
         <div class="menu">
-            <div class="container">
-                <div class="row  mx-auto">
-                    <div class="col-2">
-                        <label class="menu-toggle"><img src="{{ url('assets/img/menu.svg') }}" alt=""></label>
-                        <nav><a class="nav-item" href="#home">Home</a><a class="nav-item" href="#about">About</a><a
-                                class="nav-item" href="#work">Work</a><a class="nav-item" href="#contact">Contact</a>
-                        </nav>
+            <div class="">
+                <div style="text-align: -webkit-center;" class="d-flex  mx-auto">
+                    <div class="col-2 btn-menu">
+                        <div class="">
+                            <label class="menu-toggle"><img src="{{ url('assets/img/menu.svg') }}" alt=""></label>
+                            <nav>
+                                <a class="nav-item" href="#home">Loja Online</a>
+                                <a class="nav-item" href="#about">Livros</a>
+                                <a class="nav-item" href="#work">Bebé</a>
+                                <a class="nav-item" href="#contact">Música</a>
+                                <a class="nav-item" href="#contact">Jogos</a>
+                                <a class="nav-item" href="#contact">Pais</a>
+                                <a class="nav-item" href="#contact">Sobre autora</a>
+                                <a class="nav-item" href="#contact">Contactos</a>
+                            </nav>
+                        </div>
 
                     </div>
                     <div class="col-8">
@@ -33,8 +43,8 @@
                             <img src="{{ url('assets/img/logo.svg') }}" alt="">
                         </div>
                     </div>
-                    <div class="col-2">
-                        <div class="user">
+                    <div class="col-2 user">
+                        <div class="">
                             <img src="{{ url('assets/img/user.svg') }}" alt="">
                         </div>
                     </div>
