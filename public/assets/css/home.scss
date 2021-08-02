@@ -12,8 +12,12 @@
     }
 }
 .hora-da-papa {
+<<<<<<< HEAD
     margin: 0 auto;
     margin-bottom: 150px;
+=======
+    margin: -35px auto;
+>>>>>>> main
     width: 285px;
     height: 285px;
     img {
@@ -162,7 +166,7 @@
         height: 65px;
     }
     .enviar {
-        margin-bottom: 200px;
+
 
         .btn-enviar {
             width: 100%;
@@ -176,7 +180,11 @@
 
 .loja {
     margin: 0 10px;
+
     .bom-dia-1 {
+        img{
+            width: 310px;
+        }
         .btn-comprar {
             background-color: #ee2461;
             color: #fff;
@@ -186,7 +194,10 @@
         }
     }
     .hora-papa {
-        margin-bottom: 200px;
+    
+        img{
+            width: 250px;
+        }
         .btn-comprar {
             background-color: #ee2461;
             color: #fff;
