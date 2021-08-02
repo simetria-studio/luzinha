@@ -6,7 +6,7 @@
             <img src="{{ url('assets/img/bom-dia.png') }}" alt="">
         </div>
         <div class="hora-da-papa">
-            <img src="{{ url('assets/img/hora-papa.png') }}" alt="">
+           <a href="{{ url('livro-1') }}"> <img src="{{ url('assets/img/hora-papa.png') }}" alt=""></a>
         </div>
     </div>
 @endsection
