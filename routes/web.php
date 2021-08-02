@@ -38,3 +38,11 @@ Route::get('/bebe', function () {
 
     return view('home.bebe');
 });
+Route::get('/educar', function () {
+
+    return view('home.educar');
+});
+Route::get('/inscricao-musica', function () {
+
+    return view('home.inscricao-musica');
+});

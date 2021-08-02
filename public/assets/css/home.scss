@@ -37,6 +37,15 @@
         color: #fff;
     }
 }
+.btn-voltar{
+    background-color: #010101;
+    color: #fff;
+    width: 100%;
+    height: 65px;
+}
+.btn-voltar:hover{
+    color: #fff;
+}
 .foto-lia {
     width: 100%;
     height: 469px;
@@ -115,4 +124,20 @@
             height: 106px;
         }
     }
+}
+
+// PAGINA EDUCAR
+
+.educar-1{
+    width: 100%;
+    height: 253px;
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.texto-1{
+    padding-top: 30px;
+    margin-bottom: 150px;
 }
