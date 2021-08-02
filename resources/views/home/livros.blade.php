@@ -6,10 +6,10 @@
     </div>
     <div class="container livros">
         <div class="bom-dia">
-            <img src="{{ url('assets/img/bom-dia.png') }}" alt="">
+           <a href="{{ url('livro-2') }}"> <img src="{{ url('assets/img/bom-dia.png') }}" alt=""></a>
         </div>
         <div class="hora-da-papa">
-            <img src="{{ url('assets/img/hora-papa.png') }}" alt="">
+            <a href="{{ url('livro-1') }}"><img src="{{ url('assets/img/hora-papa.png') }}" alt=""></a>
         </div>
     </div>
 @endsection
