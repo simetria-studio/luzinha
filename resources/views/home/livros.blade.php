@@ -4,7 +4,7 @@
     <div class="titulo">
         <p>LIVROS</p>
     </div>
-    <div class="container">
+    <div class="container livros">
         <div class="bom-dia">
             <img src="{{ url('assets/img/bom-dia.png') }}" alt="">
         </div>
