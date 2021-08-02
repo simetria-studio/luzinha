@@ -1,21 +1,21 @@
-*{
-    font-family: 'Fredoka One', cursive, sans-serif;
+* {
+    font-family: "Fredoka One", cursive, sans-serif;
 }
 // HOME
 
-.bom-dia{
+.bom-dia {
     width: 345px;
     height: 229px;
-    img{
+    img {
         width: 100%;
         height: auto;
     }
 }
-.hora-da-papa{
+.hora-da-papa {
     margin: 0 auto;
     width: 285px;
     height: 285px;
-    img{
+    img {
         width: 100%;
         height: auto;
     }
@@ -23,58 +23,95 @@
 
 // pagina sobre a autora
 
-.titulo{
-    background-color: #EE2461;
+.titulo {
+    background-color: #ee2461;
     width: 100%;
     height: 65px;
     display: flex;
     justify-content: center;
     align-items: center;
-    p{
+    p {
         font-size: 23.4px;
         font-weight: 400;
-        color:#fff;
+        color: #fff;
     }
 }
-.foto-lia{
+.foto-lia {
     width: 100%;
     height: 469px;
-    img{
+    img {
         width: 100%;
         height: 100%;
     }
 }
-.texto{
+.texto {
     margin-top: 30px;
 
-    p{
+    p {
         font-family: Poppins, sans-serif;
         font-weight: 500;
         font-size: 18px;
         text-align: center;
         line-height: 27px;
     }
-    .texto-final{
+    .texto-final {
         margin-bottom: 130px;
     }
 }
 
 // Paginas Contatos
-.icones{
+.icones {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 250px;
-    .icone{
+    .icone {
+        margin: 0 30px;
+    }
+}
+.icones_1 {
+    margin-top:30px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    .icone {
         margin: 0 30px;
     }
 }
 
 // pagina bebes
 
-.bebe{
-    a{
-
+.bebe {
+    p{
+        color: #A42B31;
+        font-weight: 400;
+        font-size: 23.4px;
+        line-height: 28.32px;
+    }
+    .aulas1 {
+        img {
+            width: 107px;
+            height: 93px;
+        }
+    }
+    .aulas2 {
+        img {
+            width: 116px;
+            height: 95px;
+        }
+    }
+    .aulas3 {
+        img {
+            width: 66.83px;
+            height: 102.43px;
+        }
+    }
+    .aulas4 {
+        img {
+            width: 59px;
+            height: 106px;
+        }
     }
 }

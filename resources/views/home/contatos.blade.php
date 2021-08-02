@@ -26,7 +26,7 @@
     <div class="titulo">
         <p>REDES SOCIAIS</p>
     </div>
-    <div class="icones">
+    <div class="icones_1">
         <div class="d-flex">
             <div class="icone">
                 <a href="#">
