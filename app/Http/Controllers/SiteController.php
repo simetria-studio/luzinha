@@ -25,4 +25,8 @@ class SiteController extends Controller
     {
         return view('home.pais');
     }
+    public function alimentacao()
+    {
+        return view('home.alimentacao');
+    }
 }
