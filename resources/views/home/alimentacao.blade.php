@@ -2,11 +2,14 @@
 
 @section('content')
     <div class="titulo">
-        <p>PAIS</p>
+        <p>ALIMENTACÃO</p>
     </div>
     <div class="">
         <img class="img-responsive w-100" src="{{ url('assets/img/foto_lia_2.svg') }}" alt="">
     </div>
+    @php
+        $texto = '';
+    @endphp
     <div class="container">
         <div class="texto text-center px-5">
             <p>Até aos 6 meses, a alimentação do bebé começa por ser feita exclusivamente com leite materno, em livre
@@ -44,7 +47,7 @@
                 fórmula nas restantes refeições do dia, ou seja, quando não come papa de cereais ou fruta nem sopa, uma vez
                 que o leite tem nutrientes como o cálcio e vitaminas são necessárias para o seu crescimento.
 
-
+               
             <p class="texto-final"> Mestre em Literatura Portuguesa pela Faculdade de Letras da Universidade do Porto.
                 Foi mãe há 2 anos de uma menina chamada Luz. Esta nova fase inspirou-a para escrever uma coleção de 6 livros
                 infantis de carácter pedagógico chamada "O Mundo da Luzinha".

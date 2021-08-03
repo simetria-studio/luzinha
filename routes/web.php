@@ -1,7 +1,9 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SiteController;
+use App\Http\Controllers\RegisterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,6 +17,9 @@ use App\Http\Controllers\SiteController;
 */
 
 Route::get('layout', [SiteController::class, 'layout']);
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/', [SiteController::class, 'index']);
 Route::get('/musicas', [SiteController::class, 'musicas']);
@@ -33,17 +38,21 @@ Route::get('/livro-2', [SiteController::class, 'livro2']);
 Route::get('loja-home', [SiteController::class, 'loja']);
 Route::get('produto-1', [SiteController::class, 'produtoOne']);
 Route::get('produto-2', [SiteController::class, 'produtoTwo']);
+Route::get('videos', [SiteController::class, 'videos']);
+Route::get('jogos', [SiteController::class, 'jogos']);
+Route::post('registo', [RegisterController::class, 'store']);
 
 
-Route::get('/login', function () {
 
-    return view('login.login');
-});
-Route::get('/register', function () {
 
+
+<<<<<<< HEAD
     return view('login.register');
 });
 <<<<<<< HEAD
+=======
+
+>>>>>>> main
 =======
 
 >>>>>>> main

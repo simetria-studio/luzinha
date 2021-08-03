@@ -81,4 +81,13 @@ class SiteController extends Controller
     {
         return view('home.loja-single-2');
     }
+
+    public function videos()
+    {
+        return view('home.videos');
+    }
+    public function jogos()
+    {
+        return view('home.jogos');
+    }
 }
