@@ -45,7 +45,7 @@
                                 <a class="nav-item" href="{{ url('livros') }}">Livros</a>
                                 <a class="nav-item" href="{{ url('bebes') }}">Bebé</a>
                                 <a class="nav-item" href="{{ url('musicas') }}">Música</a>
-                                <a class="nav-item" href="#contact">Jogos</a>
+                                <a class="nav-item" href="{{ url('jogos') }}">Jogos</a>
                                 <a class="nav-item" href="{{ url('pais') }}">Pais</a>
                                 <a class="nav-item" href="{{ url('sobre') }}">Sobre autora</a>
                                 <a class="nav-item" href="{{ url('contatos') }}">Contactos</a>
@@ -75,7 +75,7 @@
             <div class="container">
                 <div class="row justify-content-lg-around">
                     <div class="col-4">
-                       <a href="{{ url('videos') }}"><img src="{{ url('assets/img/camera.svg') }}" alt=""></a> 
+                       <a href="{{ url('videos') }}"><img src="{{ url('assets/img/camera.svg') }}" alt=""></a>
                     </div>
                     <div class="col-4">
                         <span class="bolinha">
@@ -83,7 +83,7 @@
                         </span>
                     </div>
                     <div class="col-4">
-                        <img src="{{ url('assets/img/jogo.svg') }}" alt="">
+                       <a href="{{ url('jogos') }}"> <img src="{{ url('assets/img/jogo.svg') }}" alt=""></a>
                     </div>
                 </div>
             </div>

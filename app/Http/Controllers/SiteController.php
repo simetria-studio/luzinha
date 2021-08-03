@@ -86,4 +86,8 @@ class SiteController extends Controller
     {
         return view('home.videos');
     }
+    public function jogos()
+    {
+        return view('home.jogos');
+    }
 }
