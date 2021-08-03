@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="titulo">
-        <p>PAIS</p>
+        <p>ALIMENTACÃO</p>
     </div>
     <div class="">
         <img class="img-responsive w-100" src="{{ url('assets/img/foto_lia_2.svg') }}" alt="">
