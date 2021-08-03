@@ -102,7 +102,7 @@
     <script type="text/javascript">
         $(".flipbook").turn({
             width: 400,
-            height: 300,
+            height: 200,
             autoCenter: true
         });
     </script>
