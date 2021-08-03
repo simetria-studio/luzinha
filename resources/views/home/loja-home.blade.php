@@ -4,8 +4,8 @@
 
     <div class="loja">
         <div class="container">
-            <div class="bom-dia-1">
-                <div class="mt-3 text-center">
+            <div class="bom-dia-1 mt-3">
+                <div class="text-center">
                     <img src="{{ url('assets/img/bom-dia.png') }}" alt="">
                 </div>
                 <div>
@@ -13,11 +13,11 @@
                 </div>
             </div>
 
-            <div class="hora-papa">
-                <div class="mt-4 text-center">
+            <div class="hora-papa mt-3">
+                <div class=" text-center">
                     <img src="{{ url('assets/img/hora-papa.png') }}" alt="">
                 </div>
-                <div class="mb-5">
+                <div>
                    <a href="{{ url('produto-2') }}"> <button class="btn btn-comprar">COMPRAR</button></a>
                 </div>
             </div>
