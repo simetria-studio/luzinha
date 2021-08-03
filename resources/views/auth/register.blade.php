@@ -32,7 +32,7 @@
                 <button type="submit" class="btn btn-login">REGISTO</button>
             </div>
         </form>
-        <div class="mt-2 first-acess">
+        <div class="mt-2 first-acess mb-5">
             <a href="{{ route('login') }}">JA TEM LOGIN?</a>
         </div>
     </div>
