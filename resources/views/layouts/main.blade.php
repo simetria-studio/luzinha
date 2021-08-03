@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/css/green-audio-player.min.css">
 
-        <link rel="stylesheet" href="{{ url('assets/css/basic.css') }}">
+    <link rel="stylesheet" href="{{ url('assets/css/basic.css') }}">
     <link rel="stylesheet" href="{{ url('assets/css/main.min.css') }}">
     <link rel="stylesheet" href="{{ url('assets/css/home.min.css') }}">
 
@@ -36,6 +36,10 @@
                         <div class="">
                             <label class="menu-toggle"><img src="{{ url('assets/img/menu.svg') }}" alt=""></label>
                             <nav>
+                                @if (Auth::check())
+                                    <span class="name">Olá, {{ Auth::user()->name }}</span>
+                                @endif
+
                                 <a class="nav-item" href="{{ url('/') }}">Home</a>
                                 <a class="nav-item" href="{{ url('loja-home') }}">Loja Online</a>
                                 <a class="nav-item" href="{{ url('livros') }}">Livros</a>
@@ -50,13 +54,13 @@
 
                     </div>
                     <div class="col-8">
-                       <div class="logo">
-                           <a href="{{ url('/') }}"><img src="{{ url('assets/img/logo.svg') }}" alt=""></a>
+                        <div class="logo">
+                            <a href="{{ url('/') }}"><img src="{{ url('assets/img/logo.svg') }}" alt=""></a>
                         </div>
                     </div>
                     <div class="col-2 user">
                         <div class="">
-                            <img src="{{ url('assets/img/user.svg') }}" alt="">
+                            <a href="{{ route('login') }}"><img src="{{ url('assets/img/user.svg') }}" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -75,7 +79,7 @@
                     </div>
                     <div class="col-4">
                         <span class="bolinha">
-                           <a href="{{ url('/') }}"><img src="{{ url('assets/img/centro.svg') }}" alt=""></a>
+                            <a href="{{ url('/') }}"><img src="{{ url('assets/img/centro.svg') }}" alt=""></a>
                         </span>
                     </div>
                     <div class="col-4">

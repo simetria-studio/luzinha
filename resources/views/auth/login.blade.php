@@ -16,19 +16,14 @@
                 <input id="name_1" class="input" name="password" type="password" pattern=".+" required />
                 <label class="label" for="name_1">SENHA</label>
             </div>
-<<<<<<< HEAD:resources/views/auth/login.blade.php
-=======
             <div class="mt-3">
-                <button class="btn btn-login">LOGIN</button>
+                <button type="submit" class="btn btn-login">LOGIN</button>
             </div>
-            <div class="mt-3 first-acess">
-                <a href="#">PRIMEIRO ACESSO?</a>
-            </div>
->>>>>>> main:resources/views/login/login.blade.php
         </form>
         <div class="mt-3 first-acess">
-            <a href="#">PRIMEIRO ACESSO?</a>
+            <a href="{{ route('register') }}">PRIMEIRO ACESSO?</a>
         </div>
+
     </div>
 
 

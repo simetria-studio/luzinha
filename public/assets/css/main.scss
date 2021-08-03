@@ -50,6 +50,7 @@ body{
 
   nav {
     position: fixed;
+    font-family: 'Fredoka One' !important;
     top: -100%;
     left: 0;
     width: 100%;
@@ -167,7 +168,12 @@ footer{
     background-color: #dc3545 !important;
 }
 
-
+.name{
+    background: #dc3545;
+    padding: 25px 10px;
+    width: 100%;
+    color: white;
+}
 .livro{
     margin-top: 180px;
     img{

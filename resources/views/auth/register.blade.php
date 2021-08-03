@@ -1,77 +1,41 @@
-@extends('layouts.app')
+@extends('layouts.login')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+    <div class="faca-registo">
+        <p>FAÇA SEU REGISTO</p>
+    </div>
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
-                        @csrf
-
-                        <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
-
-                                @error('name')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
-
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
-
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
-                            </div>
-                        </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+    <div class="mt-5 text-center ">
+        <form action="{{ url('registo') }}" method="post">
+            @csrf
+            <div class="input-container mt-3">
+                <input id="name" class="input" name="name" type="text" pattern=".+" required />
+                <label class="label" for="name">SEU NOME</label>
             </div>
+            <div class="input-container mt-3">
+                <input id="nome-crianca" class="input" name="name_child" type="text" pattern=".+" required />
+                <label class="label" for="nome-crianca">NOME DA CRIANÇA</label>
+            </div>
+            <div class="input-container mt-3">
+                <input id="email-1" class="input" name="email" type="email" pattern=".+" required />
+                <label class="label" for="email-1">E-MAIL</label>
+            </div>
+            <div class="input-container mt-3">
+                <input id="senha" class="input" name="password" type="password" pattern=".+" required />
+                <label class="label" for="senha">SENHA</label>
+            </div>
+            <div class="input-container mt-3">
+                <input id="senha2" class="input"  type="password" pattern=".+" required />
+                <label class="label" for="senha2">REPETIR SENHA</label>
+            </div>
+            <div class="mt-3">
+                <button type="submit" class="btn btn-login">REGISTO</button>
+            </div>
+        </form>
+        <div class="mt-2 first-acess">
+            <a href="{{ route('login') }}">JA TEM LOGIN?</a>
         </div>
     </div>
-</div>
+
+
 @endsection
