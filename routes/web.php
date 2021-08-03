@@ -45,14 +45,3 @@ Route::post('registo', [RegisterController::class, 'store']);
 
 
 
-
-<<<<<<< HEAD
-    return view('login.register');
-});
-<<<<<<< HEAD
-=======
-
->>>>>>> main
-=======
-
->>>>>>> main
