@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <!-- Required meta tags -->
@@ -98,8 +98,8 @@
     <script src="{{ url('/assets/js/script.js') }}"></script>
     <script type="text/javascript">
         $(".flipbook").turn({
-            width: 400,
-            height: 200,
+            width: 600,
+            height: 300,
             autoCenter: true
         });
     </script>
