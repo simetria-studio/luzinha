@@ -75,7 +75,7 @@
             <div class="container">
                 <div class="row justify-content-lg-around">
                     <div class="col-4">
-                        <img src="{{ url('assets/img/camera.svg') }}" alt="">
+                       <a href="{{ url('videos') }}"><img src="{{ url('assets/img/camera.svg') }}" alt=""></a> 
                     </div>
                     <div class="col-4">
                         <span class="bolinha">

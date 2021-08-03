@@ -38,6 +38,7 @@ Route::get('/livro-2', [SiteController::class, 'livro2']);
 Route::get('loja-home', [SiteController::class, 'loja']);
 Route::get('produto-1', [SiteController::class, 'produtoOne']);
 Route::get('produto-2', [SiteController::class, 'produtoTwo']);
+Route::get('videos', [SiteController::class, 'videos']);
 Route::post('registo', [RegisterController::class, 'store']);
 
 
