@@ -31,7 +31,7 @@
             <img src="{{ url('assets/img/login.png') }}" alt="">
         </div>
         <div class="fechar">
-            <a href="/home" class="btn btn-fechar">X</a>
+            <a href="/" class="btn btn-fechar">X</a>
         </div>
     </div>
     <main>
