@@ -14,7 +14,8 @@
         rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/css/green-audio-player.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/css/green-audio-player.min.css">
     <link rel="stylesheet" href="{{ url('assets/css/basic.css') }}">
     <link rel="stylesheet" href="{{ url('assets/css/main.min.css') }}">
     <link rel="stylesheet" href="{{ url('assets/css/home.min.css') }}">
@@ -28,36 +29,40 @@
 
         <div class="menu">
             <div class="">
-                <div style="text-align: -webkit-center;" class="d-flex  mx-auto">
-                    <div class="col-2 btn-menu">
-                        <div class="">
-                            <label class="menu-toggle"><img src="{{ url('assets/img/menu.svg') }}" alt=""></label>
-                            <nav>
-                                @if (Auth::check())
-                                    <span class="name">Olá, {{ Auth::user()->name }}</span>
-                                @endif
+                <div class="container">
+                    <div style="text-align: -webkit-center;" class="d-flex  mx-auto">
+                        <div class="col-2 btn-menu">
+                            <div class="">
+                                <label class="menu-toggle"><img src="{{ url('assets/img/menu.svg') }}" alt=""></label>
+                                <nav>
+                                    @if (Auth::check())
+                                        <span class="name">Olá, {{ Auth::user()->name }}</span>
+                                    @endif
 
-                                <a class="nav-item" href="{{ url('/') }}">Home</a>
-                                <a class="nav-item" href="{{ url('loja-home') }}">Loja Online</a>
-                                <a class="nav-item" href="{{ url('livros') }}">Livros</a>
-                                <a class="nav-item" href="{{ url('bebes') }}">Bebé</a>
-                                <a class="nav-item" href="{{ url('musicas') }}">Música</a>
-                                <a class="nav-item" href="{{ url('jogos') }}">Jogos</a>
-                                <a class="nav-item" href="{{ url('pais') }}">Pais</a>
-                                <a class="nav-item" href="{{ url('sobre') }}">Sobre autora</a>
-                                <a class="nav-item" href="{{ url('contatos') }}">Contactos</a>
-                            </nav>
-                        </div>
+                                    <a class="nav-item" href="{{ url('/') }}">Home</a>
+                                    <a class="nav-item" href="{{ url('loja-home') }}">Loja Online</a>
+                                    <a class="nav-item" href="{{ url('livros') }}">Livros</a>
+                                    <a class="nav-item" href="{{ url('bebes') }}">Bebé</a>
+                                    <a class="nav-item" href="{{ url('musicas') }}">Música</a>
+                                    <a class="nav-item" href="{{ url('jogos') }}">Jogos</a>
+                                    <a class="nav-item" href="{{ url('pais') }}">Pais</a>
+                                    <a class="nav-item" href="{{ url('sobre') }}">Sobre autora</a>
+                                    <a class="nav-item" href="{{ url('contatos') }}">Contactos</a>
+                                </nav>
+                            </div>
 
-                    </div>
-                    <div class="col-8">
-                        <div class="logo">
-                            <a href="{{ url('/') }}"><img src="{{ url('assets/img/logo.svg') }}" alt=""></a>
                         </div>
-                    </div>
-                    <div class="col-2 user">
-                        <div class="">
-                            <a href="{{ route('login') }}"><img src="{{ url('assets/img/user.svg') }}" alt=""></a>
+                        <div class="col-8">
+                            <div class="logo">
+                                <a href="{{ url('/') }}"><img src="{{ url('assets/img/logo.svg') }}"
+                                        alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-2 user">
+                            <div class="">
+                                <a href="{{ route('login') }}"><img src="{{ url('assets/img/user.svg') }}"
+                                        alt=""></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -72,7 +77,7 @@
             <div class="container">
                 <div class="row justify-content-lg-around">
                     <div class="col-4">
-                       <a href="{{ url('videos') }}"><img src="{{ url('assets/img/camera.svg') }}" alt=""></a>
+                        <a href="{{ url('videos') }}"><img src="{{ url('assets/img/camera.svg') }}" alt=""></a>
                     </div>
                     <div class="col-4">
                         <span class="bolinha">
@@ -80,7 +85,7 @@
                         </span>
                     </div>
                     <div class="col-4">
-                       <a href="{{ url('jogos') }}"> <img src="{{ url('assets/img/jogo.svg') }}" alt=""></a>
+                        <a href="{{ url('jogos') }}"> <img src="{{ url('assets/img/jogo.svg') }}" alt=""></a>
                     </div>
                 </div>
             </div>
