@@ -26,13 +26,14 @@
 
 <body>
     <div class="barra"></div>
-    <div class="retangulo d-flex">
+    <div class="retangulo">
         <div class="logo">
             <img src="{{ url('assets/img/login.png') }}" alt="">
         </div>
-        <div class="fechar">
-            <a href="/" class="btn btn-fechar">X</a>
-        </div>
+
+    </div>
+    <div class="fechar">
+        <a href="/" class="btn btn-fechar">X</a>
     </div>
     <main>
         @yield('content')

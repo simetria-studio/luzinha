@@ -2,32 +2,34 @@
     width: 100%;
     height: 221px;
     background-color: #fed775;
+    display: flex;
+    justify-content: center;
 
     .logo {
         width: 239px;
         height: 241px;
         position: relative;
         top: 66px;
-        left: 85px;
+        // left: 85px;
         img {
             width: 100%;
             height: 100%;
         }
     }
-    .fechar {
-
-        padding-top: 31px;
-        padding-left: 80px;
-        width: 52px;
-        height: 52px;
-        .btn-fechar {
-            border-radius: 45%;
-            background-color: #ee2461;
-            color: #fff;
-            font-weight: 400;
-            font-family: "Fredoka One";
-            font-size: 23.4px;
-        }
+}
+.fechar {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+    .btn-fechar {
+        border-radius: 50%;
+        background-color: #ee2461;
+        color: #fff;
+        font-weight: 400;
+        font-family: "Fredoka One";
+        font-size: 23.4px;
     }
 }
 
@@ -72,7 +74,7 @@
 /* Estrutura */
 .input-container {
     position: relative;
-    font-family: 'Fredoka One';
+    font-family: "Fredoka One";
 }
 
 input {
@@ -106,15 +108,15 @@ label {
 /* Interation */
 input:valid,
 input:focus {
-  border-bottom: 2px solid #ee2461;
+    border-bottom: 2px solid #ee2461;
 }
 
 input:valid + label,
 input:focus + label {
-  color: #ee2461;
-  font-size: .8rem;
-  top: -30px;
-  pointer-events: none;
+    color: #ee2461;
+    font-size: 0.8rem;
+    top: -30px;
+    pointer-events: none;
 }
 
 .first-acess {
@@ -123,5 +125,18 @@ input:focus + label {
         color: #ee2461 !important;
         font-family: "Fredoka One", sans-serif;
         font-size: 16.67px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .retangulo{
+        height: 200px;
+
+        .logo{
+            top: 50px;
+        }
+    }
+    .first-acess{
+        margin-bottom: 60px;
     }
 }
