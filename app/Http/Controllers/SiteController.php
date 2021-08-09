@@ -90,4 +90,8 @@ class SiteController extends Controller
     {
         return view('home.jogos');
     }
+    public function landingpage()
+    {
+        return view('home.landingpage');
+    }
 }

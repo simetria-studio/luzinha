@@ -13,9 +13,9 @@ body{
       color: black; }
 
   header {
-
+    width: 100%;
+    height: auto;
     background: #FED775 !important;
-    padding: 10px 40px;
 }
 
 
@@ -120,20 +120,25 @@ color: #D31F36;
     padding: 5px 0;
 
 }
-.btn-menu{
-    padding-top: 25px;
+.top-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.user{
-    padding-top: 25px;
-}
-.logo{
-    width: 162px;
-    height: 73px;
-    margin-right: 5%;
-    img{
-        width: 100%;
-    }
-}
+// .btn-menu{
+//     padding-top: 25px;
+// }
+// .user{
+//     padding-top: 25px;
+// }
+// .logo{
+//     width: 162px;
+//     height: 73px;
+//     margin-right: 5%;
+//     img{
+//         width: 100%;
+//     }
+// }
 .footer{
     bottom: 0;
     position: fixed;

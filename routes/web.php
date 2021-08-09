@@ -40,6 +40,7 @@ Route::get('produto-1', [SiteController::class, 'produtoOne']);
 Route::get('produto-2', [SiteController::class, 'produtoTwo']);
 Route::get('videos', [SiteController::class, 'videos']);
 Route::get('jogos', [SiteController::class, 'jogos']);
+Route::get('landingpage', [SiteController::class, 'landingpage']);
 Route::post('registo', [RegisterController::class, 'store']);
 
 
