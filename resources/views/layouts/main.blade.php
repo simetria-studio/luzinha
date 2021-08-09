@@ -35,7 +35,7 @@
                         <span class="name">Olá, {{ Auth::user()->name }}</span>
                     @endif
 
-                    <a class="nav-item" href="{{ url('/') }}">Home</a>
+                    <a class="nav-item" href="{{ url('/home') }}">Home</a>
                     <a class="nav-item" href="{{ url('loja-home') }}">Loja Online</a>
                     <a class="nav-item" href="{{ url('livros') }}">Livros</a>
                     <a class="nav-item" href="{{ url('bebes') }}">Bebé</a>
@@ -68,7 +68,7 @@
                     </div>
                     <div class="col-4">
                         <span class="bolinha">
-                            <a href="{{ url('/') }}"><img src="{{ url('assets/img/centro.svg') }}" alt=""></a>
+                            <a href="{{ url('/home') }}"><img src="{{ url('assets/img/centro.svg') }}" alt=""></a>
                         </span>
                     </div>
                     <div class="col-4">
