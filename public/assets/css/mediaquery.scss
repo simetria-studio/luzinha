@@ -47,7 +47,38 @@
     }
 }
 @media only screen and (max-width: 320px) {
-.bom-dia{
-    width: 300px;
-}
+    //home
+    .bom-dia {
+        width: 300px;
+        height: auto;
+    }
+    .hora-da-papa{
+        width: 245px;
+        height: auto;
+        bottom: 57px;
+    }
+    //loja
+    .loja{
+        .bom-dia-1{
+            img{
+                width: 250px;
+                height: auto;
+            }
+
+        }
+        .hora-papa{
+            img{
+                width: 200px;
+                height: auto;
+            }
+        }
+    }
+    .hora-papa-single {
+        img{
+            width: 300px;
+        }
+    }
+    .precos{
+        margin-bottom: 150px;
+    }
 }

@@ -28,33 +28,18 @@
     <div class="barra"></div>
     <header>
 
-<<<<<<< HEAD
         <div class="menu">
-            <div class="">
-                <div class="container">
-                    <div style="text-align: -webkit-center;" class="d-flex  mx-auto">
-                        <div class="col-2 btn-menu">
+            <div class="container">
+                <div class="sem-nome">
+                    <div class="nao-sei">
+                        <div class=" btn-menu">
                             <div class="">
                                 <label class="menu-toggle"><img src="{{ url('assets/img/menu.svg') }}" alt=""></label>
                                 <nav>
                                     @if (Auth::check())
                                         <span class="name">Olá, {{ Auth::user()->name }}</span>
                                     @endif
-=======
-                    <a class="nav-item" href="{{ url('/home') }}">Home</a>
-                    <a class="nav-item" href="{{ url('loja-home') }}">Loja Online</a>
-                    <a class="nav-item" href="{{ url('livros') }}">Livros</a>
-                    <a class="nav-item" href="{{ url('bebes') }}">Bebé</a>
-                    <a class="nav-item" href="{{ url('musicas') }}">Música</a>
-                    <a class="nav-item" href="{{ url('jogos') }}">Jogos</a>
-                    <a class="nav-item" href="{{ url('pais') }}">Pais</a>
-                    <a class="nav-item" href="{{ url('sobre') }}">Sobre autora</a>
-                    <a class="nav-item" href="{{ url('contatos') }}">Contactos</a>
-                </nav>
-            </div>
->>>>>>> main
-
-                                    <a class="nav-item" href="{{ url('/') }}">Home</a>
+                                    <a class="nav-item" href="{{ url('/home') }}">Home</a>
                                     <a class="nav-item" href="{{ url('loja-home') }}">Loja Online</a>
                                     <a class="nav-item" href="{{ url('livros') }}">Livros</a>
                                     <a class="nav-item" href="{{ url('bebes') }}">Bebé</a>
@@ -65,15 +50,14 @@
                                     <a class="nav-item" href="{{ url('contatos') }}">Contactos</a>
                                 </nav>
                             </div>
-
                         </div>
-                        <div class="col-8">
+                        <div class="">
                             <div class="logo">
                                 <a href="{{ url('/') }}"><img src="{{ url('assets/img/logo.svg') }}"
                                         alt=""></a>
                             </div>
                         </div>
-                        <div class="col-2 user">
+                        <div class=" user">
                             <div class="">
                                 <a href="{{ route('login') }}"><img src="{{ url('assets/img/user.svg') }}"
                                         alt=""></a>
@@ -95,13 +79,10 @@
                         <a href="{{ url('videos') }}"><img src="{{ url('assets/img/camera.svg') }}" alt=""></a>
                     </div>
                     <div class="col-4">
-<<<<<<< HEAD
-                        <span class="bolinha ">
-                            <a href="{{ url('/') }}"><img src="{{ url('assets/img/centro.svg') }}" alt=""></a>
-=======
+                        {{-- <span class="bolinha ">
+                            <a href="{{ url('/') }}"><img src="{{ url('assets/img/centro.svg') }}" alt=""></a> --}}
                         <span class="bolinha">
                             <a href="{{ url('/home') }}"><img src="{{ url('assets/img/centro.svg') }}" alt=""></a>
->>>>>>> main
                         </span>
                     </div>
                     <div class="col-4 ">

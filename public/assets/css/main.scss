@@ -13,8 +13,16 @@ a:visited {
 
 header {
     width: 100%;
-    height: auto;
+    height: 113px;
     background: #fed775 !important;
+}
+.sem-nome {
+    height: 113px;
+}
+.nao-sei {
+    height: 113px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .menu-toggle {
@@ -135,12 +143,16 @@ section:nth-child(3) {
         height: 100%;
     }
 }
-.user{
+.logo {
+    height: 113px;
+    display: flex;
+    align-items: center;
+}
+.user {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 
 .footer {
     bottom: 0;
