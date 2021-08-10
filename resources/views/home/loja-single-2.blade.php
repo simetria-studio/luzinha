@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-        <div class="bom-dia-single mt-5">
+        <div class="bom-dia-single">
             <img src="{{ url('assets/img/hora-papa.png') }}" alt="">
         </div>
         <div class="precos">

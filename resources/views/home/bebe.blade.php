@@ -10,8 +10,8 @@
                 <div class="col-6  aulas aulas1 text-center">
                     <a href="{{ url('alimentacao') }}">
                         <img src="{{ url('assets/img/alimentacao.png') }}" alt="">
-                        <p>ALIMENTAÇÃO</p>
                     </a>
+                    <p>ALIMENTAÇÃO</p>
                 </div>
                 <div class="col-6  aulas aulas2 text-center">
                     <a href="{{ url('educar') }}">

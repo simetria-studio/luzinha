@@ -21,7 +21,7 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/', [SiteController::class, 'landingpage']);
+Route::get('/', [SiteController::class, 'index']);
 Route::get('/home', [SiteController::class, 'index']);
 Route::get('/musicas', [SiteController::class, 'musicas']);
 Route::get('/pais', [SiteController::class, 'pais']);

@@ -1,3 +1,28 @@
+@media only screen and (max-width: 425px) {
+    //loja
+    .bom-dia-single {
+        width: 235px;
+        height: auto;
+    }
+    //bebe
+    .bebe{
+        margin-top: 40px;
+    }
+    //jogos
+    .games{
+        .qual-cor{
+            margin-top: 20px;
+        }
+        .qual-babete{
+            margin-top: 20px;
+        }
+    }
+
+    //sobre a autora
+    .texto{
+        margin-top: 100px;
+    }
+}
 @media only screen and (max-width: 411px) {
     //bebes
     .bebe {
@@ -17,6 +42,27 @@
     //sobre autora
     .texto {
         margin-top: 50px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .gap-example,
+    .gap1-example,
+    .gap2-example,
+    .gap3-example,
+    .gap4-example {
+        width: 100%;
+    }
+    //LOJA
+    .hora-papa-single {
+        margin-top: 10px;
+        img {
+            width: 320px;
+            height: auto;
+        }
+    }
+    .bom-dia-single {
+        width: 230px;
+        height: auto;
     }
 }
 @media only screen and (max-width: 360px) {
@@ -52,33 +98,63 @@
         width: 300px;
         height: auto;
     }
-    .hora-da-papa{
+    .hora-da-papa {
         width: 245px;
         height: auto;
         bottom: 57px;
     }
     //loja
-    .loja{
-        .bom-dia-1{
-            img{
+    .loja {
+        .bom-dia-1 {
+            img {
                 width: 250px;
                 height: auto;
             }
-
         }
-        .hora-papa{
-            img{
+        .hora-papa {
+            img {
                 width: 200px;
                 height: auto;
             }
         }
     }
     .hora-papa-single {
-        img{
+        img {
             width: 300px;
         }
     }
-    .precos{
+    .precos {
         margin-bottom: 150px;
+    }
+    //bebes
+
+    .aulas {
+        .aulas1 {
+            height: 95px;
+            img {
+                height: 95px;
+            }
+        }
+        p {
+            font-size: 18px;
+        }
+    }
+    .titulo {
+        p {
+            font-size: 18px;
+        }
+    }
+
+    //Jogos
+    .qual-cor {
+        margin-top: 40px;
+    }
+    .qual-babete {
+        margin-top: 40px;
+    }
+    //sobre a autora
+
+    .foto-lia {
+        height: 375px;
     }
 }
