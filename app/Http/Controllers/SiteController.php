@@ -94,4 +94,8 @@ class SiteController extends Controller
     {
         return view('home.landingpage');
     }
+    public function bomdia()
+    {
+        return view('home.livro-bom-dia');
+    }
 }

@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/css/green-audio-player.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
     <link rel="stylesheet" href="{{ url('assets/css/basic.css') }}">
     <link rel="stylesheet" href="{{ url('assets/css/main.min.css') }}">
     <link rel="stylesheet" href="{{ url('assets/css/home.min.css') }}">
@@ -98,16 +100,46 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
     </script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/js/green-audio-player.min.js"></script>
     <script src="{{ url('/assets/lib/turn.js') }}"></script>
     <script src="{{ url('/assets/js/basic.js') }}"></script>
     <script src="{{ url('/assets/js/script.js') }}"></script>
     <script type="text/javascript">
-        $(".flipbook").turn({
-            width: 600,
-            height: 300,
-            autoCenter: true
+        $('.your-class').slick({
+            dots: false,
+            arrows: false,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            prevArrow: $("#arrow-prev"),
+            nextArrow: $("#arrow-next"),
+            responsive: [{
+                    breakpoint: 538,
+                    settings: {
+                        slidesToScroll: 2,
+                        slidesToShow: 2,
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToScroll: 2,
+                        slidesToShow: 2,
+                    }
+                }
+            ]
         });
+
+
+
+
+        // $(".flipbook").turn({
+        //     width: 600,
+        //     height: 300,
+        //     autoCenter: true
+        // });
     </script>
 </body>
 

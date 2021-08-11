@@ -36,6 +36,7 @@ Route::get('/incricao-musica', [SiteController::class, 'insMusica']);
 Route::get('/inscricao-ballet', [SiteController::class, 'insBallet']);
 Route::get('/livro-1', [SiteController::class, 'livro1']);
 Route::get('/livro-2', [SiteController::class, 'livro2']);
+Route::get('/livro-bom-dia', [SiteController::class, 'bomdia']);
 Route::get('loja-home', [SiteController::class, 'loja']);
 Route::get('produto-1', [SiteController::class, 'produtoOne']);
 Route::get('produto-2', [SiteController::class, 'produtoTwo']);
