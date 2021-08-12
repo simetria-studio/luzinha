@@ -1,4 +1,4 @@
-@extends('layouts.main')
+{{-- @extends('layouts.main')
 
 @section('content')
     <div class="container">
@@ -9,4 +9,4 @@
             <a href="{{ url('livro-1') }}"> <img src="{{ url('assets/img/hora-papa.png') }}" alt=""></a>
         </div>
     </div>
-@endsection
+@endsection --}}

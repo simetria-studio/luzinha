@@ -98,4 +98,8 @@ class SiteController extends Controller
     {
         return view('home.livro-bom-dia');
     }
+    public function horapapa()
+    {
+        return view('home.livro-hora-da-papa');
+    }
 }

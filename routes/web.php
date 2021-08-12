@@ -34,6 +34,7 @@ Route::get('contato', [SiteController::class, 'contato']);
 Route::get('/sobre', [SiteController::class, 'sobre']);
 Route::get('/incricao-musica', [SiteController::class, 'insMusica']);
 Route::get('/inscricao-ballet', [SiteController::class, 'insBallet']);
+Route::get('/livro-hora-da-papa', [SiteController::class, 'horapapa']);
 Route::get('/livro-1', [SiteController::class, 'livro1']);
 Route::get('/livro-2', [SiteController::class, 'livro2']);
 Route::get('/livro-bom-dia', [SiteController::class, 'bomdia']);

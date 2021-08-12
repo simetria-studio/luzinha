@@ -110,36 +110,16 @@
             dots: false,
             arrows: false,
             infinite: false,
-            speed: 300,
             slidesToShow: 2,
             slidesToScroll: 2,
-            prevArrow: $("#arrow-prev"),
-            nextArrow: $("#arrow-next"),
             responsive: [{
-                    breakpoint: 538,
-                    settings: {
-                        slidesToScroll: 2,
-                        slidesToShow: 2,
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToScroll: 2,
-                        slidesToShow: 2,
-                    }
+                breakpoint: 426,
+                settings: {
+                    slidesToScroll: 1,
+                    slidesToShow: 1,
                 }
-            ]
+            }, ]
         });
-
-
-
-
-        // $(".flipbook").turn({
-        //     width: 600,
-        //     height: 300,
-        //     autoCenter: true
-        // });
     </script>
 </body>
 
