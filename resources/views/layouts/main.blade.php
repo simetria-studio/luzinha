@@ -120,6 +120,20 @@
                 }
             }, ]
         });
+        $('.your-class1').slick({
+            dots: false,
+            arrows: false,
+            infinite: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            responsive: [{
+                breakpoint: 426,
+                settings: {
+                    slidesToScroll: 1,
+                    slidesToShow: 1,
+                }
+            }, ]
+        });
     </script>
 </body>
 

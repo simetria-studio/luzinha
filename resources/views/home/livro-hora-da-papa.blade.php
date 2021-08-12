@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-        <div class="your-class">
+        <div class="your-class1">
             <div>
                 <img src="{{ url('assets/pages/p-1.jpg') }}" alt="" srcset="">
             </div>
