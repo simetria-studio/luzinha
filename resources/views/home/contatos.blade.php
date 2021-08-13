@@ -6,18 +6,18 @@
     </div>
     <div class="icones">
         <div class="d-flex">
-            <div class="icone">
+            <div class="icone whatsapp">
                 <a href="#">
                     <img src="{{ url('assets/img/icones/whatsapp.png') }}" alt="">
                 </a>
             </div>
-            <div class="icone">
+            <div class="icone telefone">
                 <a href="#">
                     <img src="{{ url('assets/img/icones/phone.png') }}" alt="">
                 </a>
             </div>
-            <div class="icone">
-                <a href="#">
+            <div class="icone e-mail">
+                <a href="contato@omundodaluzinha.com">
                     <img src="{{ url('assets/img/icones/email.png') }}" alt="">
                 </a>
             </div>

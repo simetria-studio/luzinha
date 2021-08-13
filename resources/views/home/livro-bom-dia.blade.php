@@ -45,4 +45,9 @@
             <img src="{{ url('assets/pages/bomdia/p-14.jpg') }}" alt="" srcset="">
         </div>
     </div>
+    <div>
+        <audio preload="metadata" autoplay >
+            <source src="assets/audio/bom-dia.mp3">
+        </audio>
+    </div>
 @endsection

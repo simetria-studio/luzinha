@@ -48,12 +48,10 @@
         </div>
     </div>
 
-    {{-- <div id="arrow-next" class="arrow-next">
-        <i class="fas fa-chevron-right"></i>
+    <div>
+        <audio preload="metadata" autoplay>
+            <source src="assets/audio/hora_da_papa.mp3">
+        </audio>
     </div>
-    <div id="arrow-prev" class="arrow-prev">
-        <i class="fas fa-chevron-left"></i>
-    </div> --}}
-
 
 @endsection
