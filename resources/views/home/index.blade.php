@@ -9,7 +9,7 @@
                 </a>
             </div>
 
-            <div class="hora-da-papa mt-3">
+            <div class="hora-da-papa">
                 <a href="{{ url('livro-hora-da-papa') }}">
                     <img src="{{ url('assets/img/hora-papa.png') }}" alt="">
                 </a>
