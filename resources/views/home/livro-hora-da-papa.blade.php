@@ -47,11 +47,14 @@
             </div>
         </div>
     </div>
-
-    <div>
-        <audio preload="metadata" autoplay>
-            <source src="assets/audio/hora_da_papa.mp3">
-        </audio>
+    <div class="musicas">
+        <div class="player">
+            <div class="gap-example">
+                <audio preload="metadata" autoplay>
+                    <source src="assets/audio/hora_da_papa.mp3">
+                </audio>
+            </div>
+        </div>
     </div>
 
 @endsection

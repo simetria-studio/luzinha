@@ -5,7 +5,7 @@
         <div class="livrobomdia">
             <img src="{{ url('assets/pages/bomdia/p-1.jpg') }}" alt="" srcset="">
         </div>
-        <div class="livrobomdia" >
+        <div class="livrobomdia">
             <img src="{{ url('assets/pages/bomdia/p-2.jpg') }}" alt="" srcset="">
         </div>
         <div class="livrobomdia">
@@ -45,9 +45,13 @@
             <img src="{{ url('assets/pages/bomdia/p-14.jpg') }}" alt="" srcset="">
         </div>
     </div>
-    <div>
-        <audio preload="metadata" autoplay >
-            <source src="assets/audio/bom-dia.mp3">
-        </audio>
+    <div class="musicas">
+        <div class="player">
+            <div class="gap-example">
+                <audio preload="metadata" autoplay>
+                    <source src="assets/audio/bom-dia.mp3">
+                </audio>
+            </div>
+        </div>
     </div>
 @endsection
