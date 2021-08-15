@@ -94,6 +94,14 @@ class SiteController extends Controller
     {
         return view('home.landingpage');
     }
+    public function lpbomdia()
+    {
+        return view('home.landing.landing-bd');
+    }
+    public function lphorapapa()
+    {
+        return view('home.landing.landing-hdp');
+    }
     public function bomdia()
     {
         return view('home.livro-bom-dia');
