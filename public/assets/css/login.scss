@@ -21,16 +21,19 @@
     position: absolute;
     top: 30px;
     right: 10px;
-    width: 60px;
-    height: 60px;
-    .btn-fechar {
-        border-radius: 50%;
-        background-color: #ee2461;
-        color: #fff;
-        font-weight: 400;
-        font-family: "Fredoka One";
-        font-size: 23.4px;
+    a{
+
+        i{
+            color: #ee2461;
+            font-size: 32px;
+            width: 30px;
+            height: 30px;
+            background: #fff;
+            border-radius: 50%;
+
+        }
     }
+
 }
 
 .faca-login {
