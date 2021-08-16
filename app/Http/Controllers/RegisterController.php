@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 
@@ -37,7 +38,7 @@ class RegisterController extends Controller
      */
     public function store(Request $request)
     {
- 
+
 
         $save = User::create([
             'name' => $request['name'],
@@ -45,8 +46,9 @@ class RegisterController extends Controller
             'email' => $request['email'],
             'password' => Hash::make($request['password']),
         ]);
-
-        return redirect('/');
+        if (Auth::guard('web')->attempt(['email' => $request->email, 'password' => $request->password])) {
+            return redirect('/home');
+        }
     }
 
     /**

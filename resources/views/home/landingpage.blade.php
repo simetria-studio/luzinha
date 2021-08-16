@@ -28,7 +28,7 @@
                     <img src="{{ url('assets/lp/logo.png') }}" alt="">
                 </div>
                 <div class="playstore">
-                    <a href="">
+                    <a href="https://play.google.com/store/apps/details?id=com.mundo.luzinhaweb">
                         <img src="{{ url('assets/lp/playstore.png') }}" alt="">
                     </a>
                 </div>
