@@ -39,7 +39,18 @@ class RegisterController extends Controller
     public function store(Request $request)
     {
 
+        $rules = [
+            'name' => 'required|min:3|max:50',
+            'email' => 'email',
+            'password' => 'required|confirmed|min:6',
+        ];
 
+        $customMessages = [
+            'required' => 'Este campo e requerido, por favor preencha!',
+            'confirmed' => 'As senhas não são iguais'
+        ];
+        $this->validate($request, $rules, $customMessages);
+        
         $save = User::create([
             'name' => $request['name'],
             'name_child' => $request['name_child'],

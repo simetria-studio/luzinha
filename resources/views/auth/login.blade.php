@@ -5,7 +5,7 @@
         <p>FAÇA SEU LOGIN</p>
     </div>
 
-    <div class="mt-5 text-center">
+    <div class="mt-5 text-center form-input">
         <form action="{{ route('login') }}" method="post">
             @csrf
             <div class="input-container mt-3">

@@ -5,9 +5,16 @@
         <p>FAÇA SEU REGISTO</p>
     </div>
 
-    <div class="mt-5 text-center ">
+    <div class="mt-5 text-center form-input">
         <form action="{{ url('registo') }}" method="post">
             @csrf
+            @if ($errors->any())
+                <div class="alert alert-danger">
+                    @foreach ($errors->all() as $error)
+                        <p>{{ $error }}</p>
+                    @endforeach
+                </div>
+            @endif
             <div class="input-container mt-3">
                 <input id="name" class="input" name="name" type="text" pattern=".+" required />
                 <label class="label" for="name">SEU NOME</label>
@@ -25,7 +32,7 @@
                 <label class="label" for="senha">SENHA</label>
             </div>
             <div class="input-container mt-3">
-                <input id="senha2" class="input"  type="password" pattern=".+" required />
+                <input id="senha2" class="input" name="password_confirmation" type="password" pattern=".+" required />
                 <label class="label" for="senha2">REPETIR SENHA</label>
             </div>
             <div class="mt-3">
