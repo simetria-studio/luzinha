@@ -22,8 +22,8 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/', [SiteController::class, 'landingpage']);
-Route::get('lp-bom-dia', [SiteController::class, 'lpbomdia']);
-Route::get('lp-hora-da-papa', [SiteController::class, 'lphorapapa']);
+Route::get('/livro-1', [SiteController::class, 'lpbomdia']);
+Route::get('/livro-2', [SiteController::class, 'lphorapapa']);
 Route::get('/home', [SiteController::class, 'index']);
 Route::get('/musicas', [SiteController::class, 'musicas']);
 Route::get('/pais', [SiteController::class, 'pais']);
