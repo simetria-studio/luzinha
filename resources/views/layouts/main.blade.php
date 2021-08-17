@@ -55,7 +55,7 @@
                         </div>
                         <div class="">
                             <div class="logo">
-                                <a href="{{ url('/') }}"><img src="{{ url('assets/img/logo.svg') }}"
+                                <a href="{{ url('/home') }}"><img src="{{ url('assets/img/logo.svg') }}"
                                         alt=""></a>
                             </div>
                         </div>
