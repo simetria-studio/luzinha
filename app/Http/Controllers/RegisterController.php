@@ -50,7 +50,7 @@ class RegisterController extends Controller
             'confirmed' => 'As senhas não são iguais'
         ];
         $this->validate($request, $rules, $customMessages);
-        
+
         $save = User::create([
             'name' => $request['name'],
             'name_child' => $request['name_child'],
@@ -62,12 +62,13 @@ class RegisterController extends Controller
         }
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+
+    public function logout(Request $request) {
+        Auth::logout();
+        return redirect('/home');
+      }
+
+
     public function show($id)
     {
         //

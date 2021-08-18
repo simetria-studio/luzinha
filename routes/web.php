@@ -45,6 +45,7 @@ Route::get('videos', [SiteController::class, 'videos']);
 Route::get('jogos', [SiteController::class, 'jogos']);
 
 Route::post('registo', [RegisterController::class, 'store']);
+Route::any('site-logout', [RegisterController::class, 'logout'])->name('logout.site');
 
 
 

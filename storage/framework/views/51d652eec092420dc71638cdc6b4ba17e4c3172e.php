@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    {{-- fonts --}}
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
@@ -18,10 +18,10 @@
         href="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/css/green-audio-player.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-    <link rel="stylesheet" href="{{ url('assets/css/basic.css') }}">
-    <link rel="stylesheet" href="{{ url('assets/css/main.min.css') }}">
-    <link rel="stylesheet" href="{{ url('assets/css/home.min.css') }}">
-    <link rel="stylesheet" href="{{ url('assets/css/mediaquery.min.css') }}">
+    <link rel="stylesheet" href="<?php echo e(url('assets/css/basic.css')); ?>">
+    <link rel="stylesheet" href="<?php echo e(url('assets/css/main.min.css')); ?>">
+    <link rel="stylesheet" href="<?php echo e(url('assets/css/home.min.css')); ?>">
+    <link rel="stylesheet" href="<?php echo e(url('assets/css/mediaquery.min.css')); ?>">
 
     <title>Luzinha</title>
 </head>
@@ -36,47 +36,48 @@
                     <div class="nao-sei">
                         <div class=" btn-menu">
                             <div class="">
-                                <label class="menu-toggle"><img src="{{ url('assets/img/menu.svg') }}" alt=""></label>
+                                <label class="menu-toggle"><img src="<?php echo e(url('assets/img/menu.svg')); ?>" alt=""></label>
                                 <nav>
-                                    @if (Auth::check())
-                                        <span class="name">Olá, {{ Auth::user()->name }}</span>
-                                    @endif
-                                    <a class="nav-item" href="{{ url('/home') }}">Home</a>
-                                    <a class="nav-item" href="{{ url('loja-home') }}">Loja Online</a>
-                                    <a class="nav-item" href="{{ url('livros') }}">Livros</a>
-                                    <a class="nav-item" href="{{ url('bebes') }}">Bebé</a>
-                                    <a class="nav-item" href="{{ url('musicas') }}">Música</a>
-                                    <a class="nav-item" href="{{ url('jogos') }}">Jogos</a>
-                                    <a class="nav-item" href="{{ url('pais') }}">Pais</a>
-                                    <a class="nav-item" href="{{ url('sobre') }}">Sobre autora</a>
-                                    <a class="nav-item" href="{{ url('contatos') }}">Contactos</a>
+                                    <?php if(Auth::check()): ?>
+                                        <span class="name">Olá, <?php echo e(Auth::user()->name); ?></span>
+                                    <?php endif; ?>
+                                    <a class="nav-item" href="<?php echo e(url('/home')); ?>">Home</a>
+                                    <a class="nav-item" href="<?php echo e(url('loja-home')); ?>">Loja Online</a>
+                                    <a class="nav-item" href="<?php echo e(url('livros')); ?>">Livros</a>
+                                    <a class="nav-item" href="<?php echo e(url('bebes')); ?>">Bebé</a>
+                                    <a class="nav-item" href="<?php echo e(url('musicas')); ?>">Música</a>
+                                    <a class="nav-item" href="<?php echo e(url('jogos')); ?>">Jogos</a>
+                                    <a class="nav-item" href="<?php echo e(url('pais')); ?>">Pais</a>
+                                    <a class="nav-item" href="<?php echo e(url('sobre')); ?>">Sobre autora</a>
+                                    <a class="nav-item" href="<?php echo e(url('contatos')); ?>">Contactos</a>
                                 </nav>
                             </div>
                         </div>
                         <div class="">
                             <div class="logo">
-                                <a href="{{ url('/home') }}"><img src="{{ url('assets/img/logo.svg') }}"
+                                <a href="<?php echo e(url('/home')); ?>"><img src="<?php echo e(url('assets/img/logo.svg')); ?>"
                                         alt=""></a>
                             </div>
                         </div>
                         <div class="user">
-                            @if (auth()->check())
+                            <?php if(auth()->check()): ?>
                                 <div class="logout">
-                                    <a href="{{ route('logout.site') }}"
+                                    <a href="<?php echo e(route('logout.site')); ?>"
                                         onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><span><i
                                                 class="fas fa-sign-out-alt"></i></span></a>
-                                    <form id="logout-form" action="{{ route('logout.site') }}" method="POST"
+                                    <form id="logout-form" action="<?php echo e(route('logout.site')); ?>" method="POST"
                                         style="display: none;">
-                                        {{ csrf_field() }}
+                                        <?php echo e(csrf_field()); ?>
+
                                     </form>
                                 </div>
 
-                            @else
+                            <?php else: ?>
                                 <div class="">
-                                    <a href="{{ route('login') }}"><img src="{{ url('assets/img/user.svg') }}"
+                                    <a href="<?php echo e(route('login')); ?>"><img src="<?php echo e(url('assets/img/user.svg')); ?>"
                                             alt=""></a>
                                 </div>
-                            @endif
+                            <?php endif; ?>
 
                         </div>
                     </div>
@@ -85,24 +86,23 @@
         </div>
     </header>
     <main>
-        @yield('content')
+        <?php echo $__env->yieldContent('content'); ?>
     </main>
     <footer>
         <div class="footer">
             <div class="container">
                 <div class="row justify-content-around">
                     <div class="col-4 ">
-                        <a href="{{ url('videos') }}"><img src="{{ url('assets/img/camera.svg') }}" alt=""></a>
+                        <a href="<?php echo e(url('videos')); ?>"><img src="<?php echo e(url('assets/img/camera.svg')); ?>" alt=""></a>
                     </div>
                     <div class="col-4">
-                        {{-- <span class="bolinha ">
-                            <a href="{{ url('/') }}"><img src="{{ url('assets/img/centro.svg') }}" alt=""></a> --}}
+                        
                         <span class="bolinha">
-                            <a href="{{ url('/home') }}"><img src="{{ url('assets/img/centro.svg') }}" alt=""></a>
+                            <a href="<?php echo e(url('/home')); ?>"><img src="<?php echo e(url('assets/img/centro.svg')); ?>" alt=""></a>
                         </span>
                     </div>
                     <div class="col-4 ">
-                        <a href="{{ url('jogos') }}"> <img src="{{ url('assets/img/jogo.svg') }}" alt=""></a>
+                        <a href="<?php echo e(url('jogos')); ?>"> <img src="<?php echo e(url('assets/img/jogo.svg')); ?>" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -110,15 +110,15 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
-    <script type="text/javascript" src="{{ url('assets/extras/modernizr.2.5.3.min.js') }}"></script>
+    <script type="text/javascript" src="<?php echo e(url('assets/extras/modernizr.2.5.3.min.js')); ?>"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
     </script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/js/green-audio-player.min.js"></script>
-    <script src="{{ url('/assets/lib/turn.js') }}"></script>
-    <script src="{{ url('/assets/js/basic.js') }}"></script>
-    <script src="{{ url('/assets/js/script.js') }}"></script>
+    <script src="<?php echo e(url('/assets/lib/turn.js')); ?>"></script>
+    <script src="<?php echo e(url('/assets/js/basic.js')); ?>"></script>
+    <script src="<?php echo e(url('/assets/js/script.js')); ?>"></script>
     <script type="text/javascript">
         $('.your-class').slick({
             dots: false,
@@ -152,3 +152,4 @@
 </body>
 
 </html>
+<?php /**PATH C:\xampp\htdocs\luzinha\resources\views/layouts/main.blade.php ENDPATH**/ ?>
