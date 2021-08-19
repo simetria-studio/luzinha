@@ -5,10 +5,10 @@
         <p>VIDEOS</p>
     </div>
     <div class="container">
-        <div class="bom-dia mt-5 text-center">
+        <div class="bom-dia mt-3 text-center">
             <iframe width="300" height="200" src="https://www.youtube.com/embed/G0pLCMXCSGM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-        <div class="bom-dia mt-5 text-center">
+        <div class="bom-dia mt-3 text-center">
             <iframe width="300" height="200" src="https://www.youtube.com/embed/NcBWBXKbPWI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
