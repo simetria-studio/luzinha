@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> main
 <?php $__env->startSection('content'); ?>
     <div class="faca-registo">
         <p>FAÇA SEU REGISTO</p>
