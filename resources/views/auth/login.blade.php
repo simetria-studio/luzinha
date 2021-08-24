@@ -6,7 +6,7 @@
     </div>
 
     <div class="mt-5 text-center form-input">
-        <form action="{{ route('login') }}" method="post">
+        <form action="{{ url('login/post') }}" id="form-login" method="post">
             @csrf
             <div class="input-container mt-3">
                 <input id="name" class="input" type="text" name="email" pattern=".+" required />
@@ -17,7 +17,7 @@
                 <label class="label" for="name_1">SENHA</label>
             </div>
             <div class="mt-3">
-                <button type="submit" class="btn btn-login">LOGIN</button>
+                <button type="button" id="btn-login" class="btn btn-login">LOGIN</button>
             </div>
         </form>
         <div class="mt-3 first-acess">

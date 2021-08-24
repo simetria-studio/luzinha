@@ -62,13 +62,13 @@
                         <div class="user">
                             @if (auth()->check())
                                 <div class="logout">
-                                    <a href="{{ route('logout.site') }}"
-                                        onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><span><i
+                                    <a
+                                        onclick="logout();"><span><i
                                                 class="fas fa-sign-out-alt"></i></span></a>
-                                    <form id="logout-form" action="{{ route('logout.site') }}" method="POST"
+                                    {{-- <form id="logout-form" action="{{ route('logout.site') }}" method="POST"
                                         style="display: none;">
                                         {{ csrf_field() }}
-                                    </form>
+                                    </form> --}}
                                 </div>
 
                             @else
@@ -114,6 +114,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
     </script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/js/green-audio-player.min.js"></script>
     <script src="{{ url('/assets/lib/turn.js') }}"></script>

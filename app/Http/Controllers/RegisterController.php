@@ -30,6 +30,19 @@ class RegisterController extends Controller
         //
     }
 
+    public function login(Request $request)
+    {
+        $authValid = Auth::guard('web')->validate(['email' => $request->email, 'password' => $request->password]);
+
+        if($authValid){
+            if (Auth::guard('web')->attempt(['email' => $request->email, 'password' => $request->password])) {
+
+                return response()->json('home', 200);
+            }
+        }else{
+            return response()->json(['invalid' => 'Email ou senha invalidos'], 422);
+        }
+    }
     /**
      * Store a newly created resource in storage.
      *
@@ -41,13 +54,14 @@ class RegisterController extends Controller
 
         $rules = [
             'name' => 'required|min:3|max:50',
-            'email' => 'email',
+            'email' => 'email|unique:users',
             'password' => 'required|confirmed|min:6',
         ];
 
         $customMessages = [
             'required' => 'Este campo e requerido, por favor preencha!',
-            'confirmed' => 'As senhas não são iguais'
+            'confirmed' => 'As senhas não são iguais',
+            'unique' => 'E-mail já cadastrado'
         ];
         $this->validate($request, $rules, $customMessages);
 
