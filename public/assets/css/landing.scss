@@ -26,10 +26,12 @@ body {
 }
 .back {
     background-image: url("/assets/lp/back.jpg");
+    backdrop-filter: grayscale(30%);
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
     position: absolute;
+
     width: 100%;
     height: 40vh;
     filter: drop-shadow(0 0 0.75rem rgb(87, 3, 223));
@@ -37,7 +39,7 @@ body {
 .circle {
     background-color: #aaa;
     border-radius: 50%;
-    filter: drop-shadow(0 0 0.75rem rgb(87, 3, 223));
+    border: solid 6px #fff;
     width: 250px;
     height: 250px;
     overflow: hidden;
