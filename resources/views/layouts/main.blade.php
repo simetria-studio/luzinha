@@ -120,6 +120,7 @@
     <script src="{{ url('/assets/lib/turn.js') }}"></script>
     <script src="{{ url('/assets/js/basic.js') }}"></script>
     <script src="{{ url('/assets/js/script.js') }}"></script>
+    <script src="{{ url('/assets/js/efect.js') }}"></script>
     <script type="text/javascript">
         $('.your-class').slick({
             dots: false,

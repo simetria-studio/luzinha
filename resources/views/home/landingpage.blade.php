@@ -20,40 +20,53 @@
 </head>
 
 <body>
-    <div class="full">
-        <div class="back">
+    <article class="kontext">
+        <div class="layer one show">
+            <div class="full">
+                <div class="back">
 
 
-        </div>
-        <div class="circle">
-            <img src="{{ url('assets/lp/clodoaldo.png') }}" alt="">
-        </div>
-        <div class="text-center name">
-            <h4>CLODOALDO LIMA</h4>
-        </div>
-        <div class="redes d-flex">
-            <div class="d-flex">
-                <div>
-                    <a href="tel:+554198854401">
-                        <div class="icon">
-                            <span><i class="fas fa-phone"></i></span>
+                </div>
+                <div class="circle">
+                    <img src="{{ url('assets/lp/clodoaldo.png') }}" alt="">
+                </div>
+                <div class="text-center name">
+                    <h4>CLODOALDO LIMA</h4>
+                </div>
+                <div class="redes d-flex">
+                    <div class="d-flex">
+                        <div>
+                            <a href="tel:+554198854401">
+                                <div class="icon">
+                                    <span><i class="fas fa-phone"></i></span>
+                                </div>
+                            </a>
                         </div>
-                    </a>
+                    </div>
+                    <div class="d-flex">
+                        <div>
+                            <a target="_blank"
+                                href="https://api.whatsapp.com/send?phone=5541998854401&text=Ol%C3%A1%20gostaria%20de%20solicitar%20um%20or%C3%A7amento">
+                                <div class="icon">
+                                    <span><i class="fab fa-whatsapp"></i></span>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
                 </div>
             </div>
-            <div class="d-flex">
-                <div>
-                    <a
-                      target="_blank"  href="https://api.whatsapp.com/send?phone=5541998854401&text=Ol%C3%A1%20gostaria%20de%20solicitar%20um%20or%C3%A7amento">
-                        <div class="icon">
-                            <span><i class="fab fa-whatsapp"></i></span>
-                        </div>
-                    </a>
-                </div>
-
-            </div>
         </div>
-    </div>
+        <div class="layer two">
+            <h2>Serviços</h2>
+        </div>
+        <div>
+
+            <ul class="bullets"></ul>
+        </div>
+
+    </article>
+
 
 
 
@@ -64,6 +77,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js">
     </script>
     <script src="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/js/green-audio-player.min.js"></script>
+    <script src="{{ url('/assets/js/efect.js') }}"></script>
 </body>
 
 </html>
